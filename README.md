@@ -527,6 +527,12 @@ docker run -d -p 80:8080 -v host/path/to/config.json:/src/Parse-Dashboard/parse-
 
 If you are not familiar with Docker, ``--port 8080`` will be passed in as argument to the entrypoint to form the full command ``npm start -- --port 8080``. The application will start at port 8080 inside the container and port ``8080`` will be mounted to port ``80`` on your host machine.
 
+## Deploy to Heroku
+
+If you just want to get the dashboard up and running quickly in the cloud, with minimal configuration required, try the [**parse-dashboard-on-heroku**](https://github.com/darrenkidd/parse-dashboard-on-heroku) project.
+
+This will deploy an instance of the dashboard under your Heroku account. Update the ``PARSE_DASHBOARD_CONFIG`` environment variable with your own config, and it will be ready to go.
+
 # Contributing
 
 We really want Parse to be yours, to see it grow and thrive in the open source community. Please see the [Contributing to Parse Dashboard guide](CONTRIBUTING.md).
